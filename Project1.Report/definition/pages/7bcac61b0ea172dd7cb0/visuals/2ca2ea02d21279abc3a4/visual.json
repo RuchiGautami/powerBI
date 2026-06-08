@@ -5,8 +5,8 @@
     "x": 9.92777158369286,
     "y": 0,
     "z": 0,
-    "height": 393.1397547142372,
-    "width": 508.3019050850744,
+    "height": 514.25856803529007,
+    "width": 708.8428910756702,
     "tabOrder": 0
   },
   "visual": {
@@ -29,6 +29,36 @@
               "queryRef": "Product Categories Lookup.CategoryName",
               "nativeQueryRef": "CategoryName",
               "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Product Lookup"
+                    }
+                  },
+                  "Property": "ModelName"
+                }
+              },
+              "queryRef": "Product Lookup.ModelName",
+              "nativeQueryRef": "ModelName",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Product Lookup"
+                    }
+                  },
+                  "Property": "ProductDescription"
+                }
+              },
+              "queryRef": "Product Lookup.ProductDescription",
+              "nativeQueryRef": "ProductDescription",
+              "active": false
             }
           ]
         },
@@ -116,6 +146,34 @@
           }
         },
         "type": "Advanced"
+      },
+      {
+        "name": "953d51b0c7376d3db215",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product Lookup"
+              }
+            },
+            "Property": "ModelName"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "558dd780bd00c4390718",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product Lookup"
+              }
+            },
+            "Property": "ProductDescription"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }
