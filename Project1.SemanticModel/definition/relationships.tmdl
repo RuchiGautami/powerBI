@@ -1,0 +1,8 @@
+relationship AutoDetected_94141748-825c-4dab-aba9-9c1ab85ff001
+	fromColumn: 'Product Lookup'.ProductSubcategoryKey
+	toColumn: 'Product Subcategories Lookup'.ProductSubcategoryKey
+
+relationship AutoDetected_f5a9811f-b884-4d5d-a926-183832b322da
+	fromColumn: 'Product Subcategories Lookup'.ProductCategoryKey
+	toColumn: 'Product Categories Lookup'.ProductCategoryKey
+

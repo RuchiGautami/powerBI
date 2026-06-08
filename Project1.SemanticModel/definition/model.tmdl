@@ -1,0 +1,21 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Territory Lookup","Product Lookup","Product Categories Lookup","Product Subcategories Lookup"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'Territory Lookup'
+ref table 'Product Lookup'
+ref table 'Product Categories Lookup'
+ref table 'Product Subcategories Lookup'
+
+ref cultureInfo en-US
+
